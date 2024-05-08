@@ -29,6 +29,13 @@ const btnFiveLogic = () => {
     // play click sound
     audio.currentTime = 0
     audio.play()
+    // click symbol entrance animation
+    btnFive.classList.toggle("tic")
+    btnFive.style.border = "none"
+    setTimeout(() => {
+      btnFive.classList.toggle("tic")
+      btnFive.style.border = " 2px solid rgb(138, 135, 135)"
+    }, 100)
 
     if (
       btnOne.textContent === btnFive.textContent &&

@@ -24,6 +24,14 @@ const btnSixLogic = () => {
     //play sound
     audio.currentTime = 0
     audio.play()
+    // click symbol entrance animation
+    btnSix.classList.toggle("tic")
+    btnSix.style.border = "none"
+    setTimeout(() => {
+      btnSix.classList.toggle("tic")
+      btnSix.style.border = " 2px solid rgb(138, 135, 135)"
+      btnSix.style.borderInlineEnd = "none"
+    }, 100)
 
     if (
       btnThree.textContent === btnSix.textContent &&

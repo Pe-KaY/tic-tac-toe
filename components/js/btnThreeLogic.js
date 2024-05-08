@@ -27,6 +27,15 @@ const btnThreeLogic = () => {
     // play click sound
     audio.currentTime = 0
     audio.play()
+    // click symbol entrance animation
+    btnThree.classList.toggle("tic")
+    btnThree.style.border = "none"
+    setTimeout(() => {
+      btnThree.classList.toggle("tic")
+      btnThree.style.border = " 2px solid rgb(138, 135, 135)"
+      btnThree.style.borderBlockStart = "none"
+      btnThree.style.borderInlineEnd = "none"
+    }, 100)
 
     if (
       btnOne.textContent === btnThree.textContent &&

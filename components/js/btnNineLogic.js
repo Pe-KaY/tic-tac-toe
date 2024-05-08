@@ -26,6 +26,15 @@ const btnNineLogic = () => {
     // play sound
     audio.currentTime = 0
     audio.play()
+    // click symbol entrance animation
+    btnNine.classList.toggle("tic")
+    btnNine.style.border = "none"
+    setTimeout(() => {
+      btnNine.classList.toggle("tic")
+      btnNine.style.border = " 2px solid rgb(138, 135, 135)"
+      btnNine.style.borderInlineEnd = "none"
+      btnNine.style.borderBlockEnd = "none"
+    }, 100)
 
     if (
       btnOne.textContent === btnNine.textContent &&

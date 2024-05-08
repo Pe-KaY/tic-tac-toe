@@ -26,6 +26,14 @@ const btnTwoLogic = () => {
     // play click sound
     audio.currentTime = 0
     audio.play()
+    // click symbol entrance animation
+    btnTwo.classList.toggle("tic")
+    btnTwo.style.border = "none"
+    setTimeout(() => {
+      btnTwo.classList.toggle("tic")
+      btnTwo.style.border = " 2px solid rgb(138, 135, 135)"
+      btnTwo.style.borderBlockStart = "none"
+    }, 100)
 
     if (
       btnOne.textContent === btnTwo.textContent &&

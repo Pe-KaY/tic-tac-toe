@@ -45,6 +45,7 @@ img {
   transform: scaleX(-1);
   width: 2rem;
 }
+
 .anime {
   display: flex;
   text-wrap: nowrap;
@@ -198,6 +199,20 @@ img {
 .shakeX {
   animation: 1s linear shake;
 }
+
+/* tic entrance animation */
+@keyframes tic {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.tic {
+  animation: 0.1s linear tic;
+}
+/* media queries */
 
 @media (max-width: 640px) {
   .animcontain {
