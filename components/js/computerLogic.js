@@ -180,7 +180,7 @@ const computerLogic = (symbol) => {
     ) {
       setTimeout(() => {
         btnThree.click()
-      }, 3000)
+      }, 400)
 
       return
     }
@@ -214,7 +214,7 @@ const computerLogic = (symbol) => {
     ) {
       setTimeout(() => {
         btnThree.click()
-      }, 3000)
+      }, 400)
 
       return
     }
